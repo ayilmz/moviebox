@@ -1,7 +1,71 @@
 .container {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  align-items: center;
+  height: 53px;
+  margin-top: 15px;
 }
 
 .logo {
 
+}
+
+.searchBar {
+  position: relative;
+}
+
+.searchBar input{
+  width: 525px;
+  height: 36px;
+  border: 2px solid #D1D5DB;
+  border-radius: 6px;
+  background-color: transparent;
+  color: white;
+  padding: 0 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'DM Sans', sans-serif;
+}
+.searchIcon {
+  background: transparent url('/icons/search.svg') right no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  pointer-events: none;
+}
+
+.loginAndHamburgerMenu {
+  display: table;
+  justify-content: space-between;
+  justify-items: center;
+  width: 114px;
+  height: 36px;
+}
+
+.loginLink {
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 27px;
+  font-family: 'DM Sans', sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hamburgermenu {
+  background: transparent url('/icons/hamburger-menu.svg') right no-repeat;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
 }
