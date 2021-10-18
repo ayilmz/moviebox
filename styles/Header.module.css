@@ -1,15 +1,13 @@
 .container {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: space-between;
-  width: 1440px;
+  width: 1247px;
   align-items: center;
   height: 53px;
   margin-top: 15px;
-}
-
-.logo {
-
+  z-index: 1;
+  top: 0;
 }
 
 .searchBar {
@@ -30,6 +28,11 @@
   line-height: 24px;
   font-family: 'DM Sans', sans-serif;
 }
+
+.searchBar input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+}
+
 .searchIcon {
   background: transparent url('/icons/search.svg') right no-repeat;
   width: 16px;

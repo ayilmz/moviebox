@@ -2,11 +2,11 @@ import Image from 'next/image'
 import styles from '../styles/Header.module.css'
 const Header = () => (
         <div className={styles.container}>
-            <div className={styles.logo}>
+            <div>
                 <Image   src="/movieBox.png" alt="MovieBox" width={186} height={50} />
             </div>
             <div className={styles.searchBar}>
-                <i className={styles.searchIcon}></i>
+                <i className={styles.searchIcon}/>
                 <input type="text" placeholder="What do you want to watch?"/>
             </div>
             <div className={styles.loginAndHamburgerMenu}>

@@ -1,0 +1,93 @@
+.container {
+  position: relative;
+}
+
+.information {
+  position: absolute;
+  top: 158px;
+  left: 98px;
+  z-index: 1;
+  width: 305px;
+}
+
+.information ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 18px;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.information ul li{
+  list-style-type: none;
+  margin-right: 34px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 18px;
+}
+
+.information ul li span{
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.information p.title{
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+.information p.detail{
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.information a {
+  background: #BE123C;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  color: white;
+  border: 0;
+  padding: 6px 16px 6px 26px;
+  border-radius: 6px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.information a span{
+  margin-left : 10px;
+}
+
+.information a i{
+  background: transparent url('/icons/play.svg') right no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  pointer-events: none;
+}
