@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import HeroBanner from '../components/HeroBanner'
+import MovieList from '../components/MovieList'
 
 const Home: NextPage = () => {
   return (
@@ -17,10 +18,11 @@ const Home: NextPage = () => {
           <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
       </Head>
 
-      <Header />
-
+        <Header />
         <HeroBanner/>
-
+        <MovieList title="Featured Movie"/>
+        <MovieList title="New Arrival"/>
+        <br/><br/><br/><br/><br/><br/>
       <footer>
 
       </footer>

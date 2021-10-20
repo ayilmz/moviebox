@@ -1,0 +1,61 @@
+.container {
+    width: 250px;
+    position: relative;
+}
+.locationYear {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9CA3AF;
+    margin: 12px 0 0 0;
+}
+
+.name{
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111827;
+    margin: 12px 0 0 0;
+}
+
+ul.information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18px;
+    padding: 0;
+    margin: 16px 0 0 0;
+}
+
+ul.information li{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 18px;
+}
+
+ul.information li span{
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #111827;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.type {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9CA3AF;
+    margin: 12px 0 0 0;
+}

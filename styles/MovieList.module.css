@@ -1,0 +1,30 @@
+.container {
+    width: 1247px;
+}
+
+
+ul.titleAndLink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0 44px 0;
+    padding: 0;
+}
+ul.titleAndLink li {
+    list-style-type: none;
+}
+
+ul.titleAndLink li:first-child {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+}
+
+ul.titleAndLink li:last-child {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #BE123C;
+}
