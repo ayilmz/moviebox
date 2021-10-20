@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image'
 import styles from '../styles/MovieItem.module.css';
 
-function MovieItem(props) {
+function MovieItem() {
     return (
         <div className={styles.container}>
             <Image src='/poster.png' width={250} height={370} />
