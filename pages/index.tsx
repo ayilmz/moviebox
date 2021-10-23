@@ -1,12 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import HeroBanner from '../components/HeroBanner'
 import MovieList from '../components/MovieList'
 
-const Home: NextPage = () => {
+type HeroBannerType = {
+    "title": string,
+    "imdb": string,
+    "rating": number,
+    "description": string,
+    "link": string
+}
+
+const Home: ({heroBanner}: { heroBanner: HeroBannerType }) => JSX.Element = ({heroBanner}) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,7 +26,7 @@ const Home: NextPage = () => {
       </Head>
 
         <Header />
-        <HeroBanner/>
+        <HeroBanner heroBanner={heroBanner}/>
         <MovieList title="Featured Movie"/>
         <MovieList title="New Arrival"/>
         <br/><br/><br/><br/><br/><br/>
@@ -29,5 +36,14 @@ const Home: NextPage = () => {
     </div>
   )
 }
+
+export async function getServerSideProps(context:any) {
+    const res = await fetch(`http://www.flashtr.com/moviebox/api/data.json`)
+    const { heroBanner } = await res.json()
+
+    // Pass data to the page via props
+    return { props: { heroBanner} }
+}
+
 
 export default Home
