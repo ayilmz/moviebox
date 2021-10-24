@@ -81,5 +81,22 @@
       "releaseDate": "October 21, 2021 (United States)",
       "link": "https://www.imdb.com/title/tt7097896"
     }
+  ],
+  "exclusiveVideos": [
+    {
+      "image": "/movies/no-time-to-die.jpg",
+      "title": "No Time to Die",
+      "link": "https://www.imdb.com/title/tt2382320"
+    },
+    {
+      "image": "/movies/dune-part-one.jpg",
+      "title": "Dune: Part One",
+      "link": "https://www.imdb.com/title/tt1160419"
+    },
+    {
+      "image": "/movies/the-black-phone.jpg",
+      "title": "The Black Phone",
+      "link": "https://www.imdb.com/title/tt7144666"
+    }
   ]
 }

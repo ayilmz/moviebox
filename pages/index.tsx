@@ -10,9 +10,10 @@ interface HomeProps {
     "heroBanner": any;
     "featuredMovie": any;
     "newArrival": any;
+    "exclusiveVideos": any;
 }
 
-const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival }) => {
+const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival, exclusiveVideos }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -27,10 +28,15 @@ const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival }) => {
         <Header />
         <HeroBanner heroBanner={heroBanner}/>
         {featuredMovie && (
-            <MovieList title="Featured Movie" data={featuredMovie}/>
+            <MovieList title="Featured Movie" data={featuredMovie} type="movie"/>
         )}
+
         {newArrival && (
-            <MovieList title="New Arrival" data={newArrival}/>
+            <MovieList title="New Arrival" data={newArrival} type="movie"/>
+        )}
+
+        {exclusiveVideos && (
+            <MovieList title="Exclusive Videos" data={exclusiveVideos} type="video"/>
         )}
 
       <footer>
@@ -42,13 +48,14 @@ const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival }) => {
 
 export async function getServerSideProps(context:any) {
     const res = await fetch(`http://www.flashtr.com/moviebox/api/data.json`)
-    const { heroBanner, featuredMovie, newArrival } = await res.json()
+    const { heroBanner, featuredMovie, newArrival, exclusiveVideos } = await res.json()
 
     return {
         props: {
             heroBanner: heroBanner || null,
             featuredMovie: featuredMovie || null,
-            newArrival: newArrival || null
+            newArrival: newArrival || null,
+            exclusiveVideos: exclusiveVideos || null
         }
     }
 }

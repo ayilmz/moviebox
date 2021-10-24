@@ -1,0 +1,32 @@
+ul.container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+li.item {
+    width: 350px;
+    position: relative;
+    list-style-type: none;
+}
+
+.play {
+    position: absolute;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    left: calc(50% - 27.5px);
+    top: calc(50% - 55px);
+    background: transparent url('/icons/play-video.svg') right no-repeat;
+}
+
+.title{
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111827;
+    margin: 12px 0 0 0;
+}
