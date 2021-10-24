@@ -1,0 +1,77 @@
+{
+  "heroBanner": {
+    "title": "John Wick 3 : Parabellum",
+    "imdb": "8.6",
+    "rating": 97,
+    "description": "John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.",
+    "link": "https://www.imdb.com/title/tt6146586/"
+  },
+  "featuredMovie": [
+    {
+      "image": "/movies/batman.jpg",
+      "title": "The Batman",
+      "imdb": "8.2",
+      "rating": 98,
+      "kind": ["Action","Drama","Mystery"],
+      "releaseDate": "October 21, 2021 (United States)"
+    },
+    {
+      "image": "/movies/cowboy-bebop.jpg",
+      "title": "Cowboy Bebop",
+      "imdb": "8.5",
+      "rating": 91,
+      "kind": ["Drama","Horror","Thriller"],
+      "releaseDate": "September 17, 2021 (South Korea)"
+    },
+    {
+      "image": "/movies/dexter.jpg",
+      "title": "Dexter: New Blood",
+      "imdb": "9.0",
+      "rating": 85,
+      "kind": ["Comedy","Drama","Sport"],
+      "releaseDate": "September 3, 2003 (Turkey)"
+    },
+    {
+      "image": "/movies/peacemaker.jpg",
+      "title": "Peacemaker",
+      "imdb": "7.9",
+      "rating": 92,
+      "kind": ["Crime","Drama"],
+      "releaseDate": "October 16, 2018 (Spain)"
+    }
+  ],
+  "newArrival": [
+    {
+      "image": "/movies/wheel-of-time.jpg",
+      "title": "Wheel of Time",
+      "imdb": "8.2",
+      "rating": 97,
+      "kind": ["Action","Drama","Mystery"],
+      "releaseDate": "October 21, 2021 (United States)"
+    },
+    {
+      "image": "/movies/house-of-the-dragon.jpg",
+      "title": "House of the Dragon",
+      "imdb": "8.2",
+      "rating": 88,
+      "kind": ["Action","Drama","Mystery"],
+      "releaseDate": "October 21, 2021 (United States)"
+    },
+    {
+      "image": "/movies/red-notice.jpg",
+      "title": "Red Notice",
+      "imdb": "8.2",
+      "rating": 99,
+      "kind": ["Action","Drama","Mystery"],
+      "releaseDate": "October 21, 2021 (United States)"
+    },
+    {
+      "image": "/movies/venom.jpg",
+      "title": "Venom",
+      "imdb": "8.2",
+      "rating": 89,
+      "kind": ["Action","Drama","Mystery"],
+      "releaseDate": "October 21, 2021 (United States)"
+    }
+  ]
+}

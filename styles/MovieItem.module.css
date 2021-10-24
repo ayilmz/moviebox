@@ -1,6 +1,13 @@
-.container {
+ul.container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+li.item {
     width: 250px;
     position: relative;
+    list-style-type: none;
 }
 .locationYear {
     font-family: 'DM Sans', sans-serif;

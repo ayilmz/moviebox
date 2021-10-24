@@ -4,16 +4,15 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import HeroBanner from '../components/HeroBanner'
 import MovieList from '../components/MovieList'
+import React, { FC } from 'react';
 
-type HeroBannerType = {
-    "title": string,
-    "imdb": string,
-    "rating": number,
-    "description": string,
-    "link": string
+interface HomeProps {
+    "heroBanner": any;
+    "featuredMovie": any;
+    "newArrival": any;
 }
 
-const Home: ({heroBanner}: { heroBanner: HeroBannerType }) => JSX.Element = ({heroBanner}) => {
+const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -27,8 +26,8 @@ const Home: ({heroBanner}: { heroBanner: HeroBannerType }) => JSX.Element = ({he
 
         <Header />
         <HeroBanner heroBanner={heroBanner}/>
-        <MovieList title="Featured Movie"/>
-        <MovieList title="New Arrival"/>
+        <MovieList title="Featured Movie" data={featuredMovie}/>
+        <MovieList title="New Arrival" data={newArrival}/>
         <br/><br/><br/><br/><br/><br/>
       <footer>
 
@@ -39,10 +38,9 @@ const Home: ({heroBanner}: { heroBanner: HeroBannerType }) => JSX.Element = ({he
 
 export async function getServerSideProps(context:any) {
     const res = await fetch(`http://www.flashtr.com/moviebox/api/data.json`)
-    const { heroBanner } = await res.json()
+    const { heroBanner, featuredMovie, newArrival } = await res.json()
 
-    // Pass data to the page via props
-    return { props: { heroBanner} }
+    return { props: { heroBanner, featuredMovie, newArrival} }
 }
 
 
