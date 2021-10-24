@@ -26,9 +26,13 @@ const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival }) => {
 
         <Header />
         <HeroBanner heroBanner={heroBanner}/>
-        <MovieList title="Featured Movie" data={featuredMovie}/>
-        <MovieList title="New Arrival" data={newArrival}/>
-        <br/><br/><br/><br/><br/><br/>
+        {featuredMovie && (
+            <MovieList title="Featured Movie" data={featuredMovie}/>
+        )}
+        {newArrival && (
+            <MovieList title="New Arrival" data={newArrival}/>
+        )}
+
       <footer>
 
       </footer>
@@ -40,7 +44,13 @@ export async function getServerSideProps(context:any) {
     const res = await fetch(`http://www.flashtr.com/moviebox/api/data.json`)
     const { heroBanner, featuredMovie, newArrival } = await res.json()
 
-    return { props: { heroBanner, featuredMovie, newArrival} }
+    return {
+        props: {
+            heroBanner: heroBanner || null,
+            featuredMovie: featuredMovie || null,
+            newArrival: newArrival || null
+        }
+    }
 }
 
 

@@ -13,7 +13,8 @@
       "imdb": "8.2",
       "rating": 98,
       "kind": ["Action","Drama","Mystery"],
-      "releaseDate": "October 21, 2021 (United States)"
+      "releaseDate": "October 21, 2021 (United States)",
+      "link": "https://www.imdb.com/title/tt1877830"
     },
     {
       "image": "/movies/cowboy-bebop.jpg",
@@ -21,7 +22,8 @@
       "imdb": "8.5",
       "rating": 91,
       "kind": ["Drama","Horror","Thriller"],
-      "releaseDate": "September 17, 2021 (South Korea)"
+      "releaseDate": "September 17, 2021 (South Korea)",
+      "link": "https://www.imdb.com/title/tt1267295"
     },
     {
       "image": "/movies/dexter.jpg",
@@ -29,7 +31,8 @@
       "imdb": "9.0",
       "rating": 85,
       "kind": ["Comedy","Drama","Sport"],
-      "releaseDate": "September 3, 2003 (Turkey)"
+      "releaseDate": "September 3, 2003 (Turkey)",
+      "link": "https://www.imdb.com/title/tt14164730"
     },
     {
       "image": "/movies/peacemaker.jpg",
@@ -37,7 +40,8 @@
       "imdb": "7.9",
       "rating": 92,
       "kind": ["Crime","Drama"],
-      "releaseDate": "October 16, 2018 (Spain)"
+      "releaseDate": "October 16, 2018 (Spain)",
+      "link": "https://www.imdb.com/title/tt13146488"
     }
   ],
   "newArrival": [
@@ -47,7 +51,8 @@
       "imdb": "8.2",
       "rating": 97,
       "kind": ["Action","Drama","Mystery"],
-      "releaseDate": "October 21, 2021 (United States)"
+      "releaseDate": "October 21, 2021 (United States)",
+      "link": "https://www.imdb.com/title/tt7462410"
     },
     {
       "image": "/movies/house-of-the-dragon.jpg",
@@ -55,7 +60,8 @@
       "imdb": "8.2",
       "rating": 88,
       "kind": ["Action","Drama","Mystery"],
-      "releaseDate": "October 21, 2021 (United States)"
+      "releaseDate": "October 21, 2021 (United States)",
+      "link": "https://www.imdb.com/title/tt11198330"
     },
     {
       "image": "/movies/red-notice.jpg",
@@ -63,7 +69,8 @@
       "imdb": "8.2",
       "rating": 99,
       "kind": ["Action","Drama","Mystery"],
-      "releaseDate": "October 21, 2021 (United States)"
+      "releaseDate": "October 21, 2021 (United States)",
+      "link": "https://www.imdb.com/title/tt7991608"
     },
     {
       "image": "/movies/venom.jpg",
@@ -71,7 +78,8 @@
       "imdb": "8.2",
       "rating": 89,
       "kind": ["Action","Drama","Mystery"],
-      "releaseDate": "October 21, 2021 (United States)"
+      "releaseDate": "October 21, 2021 (United States)",
+      "link": "https://www.imdb.com/title/tt7097896"
     }
   ]
 }
