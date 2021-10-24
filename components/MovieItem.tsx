@@ -12,7 +12,7 @@ function MovieItem({data}:any) {
                     <span/>
                 </div>
                 <a href={movie.link} target="_blank">
-                    <Image src={movie.image} width={250} height={370} />
+                    <Image src={movie.image} width={250} height={370} alt={movie.title} />
                     <p className={styles.locationYear}>
                         {movie.releaseDate}
                     </p>
@@ -21,11 +21,11 @@ function MovieItem({data}:any) {
                     </p>
                     <ul className={styles.information}>
                         <li>
-                            <Image src='/IMDb.png' width={35} height={17} />
+                            <Image src='/IMDb.png' width={35} height={17} alt="IMDb"  />
                             <span>{movie.imdb}/10</span>
                         </li>
                         <li>
-                            <Image src='/apple.png' width={16} height={17} />
+                            <Image src='/apple.png' width={16} height={17} alt="Rating"/>
                             <span>{movie.rating}%</span>
                         </li>
                     </ul>
