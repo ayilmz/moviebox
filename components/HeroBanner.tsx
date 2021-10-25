@@ -33,8 +33,8 @@ function HeroBanner({heroBanner}:{heroBanner:HeroBannerType}) {
                 </a>
             </div>
             <Image
-                src='/heroBanner.png'
-                alt="John Wick 3 : Parabellum"
+                src={heroBanner.image}
+                alt={heroBanner.title}
                 width={1440}
                 height={600}
             />
