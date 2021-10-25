@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../styles/Header.module.css'
+import styles from '../../styles/Header.module.css'
 const Header = () => (
         <div className={styles.container}>
             <div>

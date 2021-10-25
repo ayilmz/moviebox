@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image'
-import styles from '../styles/Hero.module.css'
+import styles from '../../styles/Hero.module.css'
 
 type HeroBannerType = {
     "title": string,
     "imdb": string,
+    "image": string,
     "rating": number,
     "description": string,
     "link": string

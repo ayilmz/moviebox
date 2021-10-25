@@ -2,8 +2,8 @@ import React, {FC} from 'react';
 import MovieItem from "./MovieItem";
 import VideoItem from "./VideoItem";
 import CastItem from "./CastItem";
-import styles from "../styles/Items.module.css"
-import { WIDGET_TYPE } from '../enums'
+import styles from "../../styles/Items.module.css"
+import { WIDGET_TYPE } from '../../enums'
 
 interface MovieListProps  {
     title: string;

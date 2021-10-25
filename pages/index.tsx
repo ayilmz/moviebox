@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Header from '../components/Header'
-import HeroBanner from '../components/HeroBanner'
-import Items from '../components/Items'
+import Header from '../src/components/Header'
+import HeroBanner from '../src/components/HeroBanner'
+import Items from '../src/components/Items'
 import React, { FC } from 'react';
 import { WIDGET_TYPE } from '../enums';
 

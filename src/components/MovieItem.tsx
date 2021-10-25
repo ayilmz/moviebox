@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import styles from '../styles/MovieItem.module.css';
+import styles from '../../styles/MovieItem.module.css';
 
 function MovieItem({data}:any) {
     return (

@@ -1,16 +1,17 @@
 import React from 'react';
-import styles from "../styles/CastItem.module.css";
+import styles from "../../styles/VideoItem.module.css";
 import Image from "next/image";
 
-function CastItem({data}:any) {
+function VideoItem({data}:any) {
     return (
         <ul className={styles.container}>
             {data?.map((item:any, index:number) => (
                 <li className={styles.item} key={index}>
+                    <i className={styles.play}/>
                     <a href={item.link} target="_blank">
-                        <Image src={item.image} width={250} height={370} alt={item.name} />
+                        <Image src={item.image} width={450} height={253} alt={item.title} />
                         <p className={styles.title}>
-                            {item.name}
+                            {item.title}
                         </p>
                     </a>
                 </li>
@@ -19,4 +20,4 @@ function CastItem({data}:any) {
     )
 }
 
-export default CastItem;
+export default VideoItem;
