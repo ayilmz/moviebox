@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import MovieItem from "./MovieItem";
 import VideoItem from "./VideoItem";
 import CastItem from "./CastItem";
-import styles from "../styles/MovieList.module.css"
+import styles from "../styles/Items.module.css"
 
 interface MovieListProps  {
     title: string;
@@ -10,7 +10,7 @@ interface MovieListProps  {
     data: any;
 }
 
-const MovieList: FC<MovieListProps> = ({ title, type, data }) => {
+const Items: FC<MovieListProps> = ({ title, type, data }) => {
     return (
         <div className={styles.container}>
             <ul className={styles.titleAndLink}>
@@ -33,4 +33,4 @@ const MovieList: FC<MovieListProps> = ({ title, type, data }) => {
     );
 }
 
-export default MovieList;
+export default Items;

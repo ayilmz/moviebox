@@ -3,7 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import HeroBanner from '../components/HeroBanner'
-import MovieList from '../components/MovieList'
+import Items from '../components/Items'
 import React, { FC } from 'react';
 
 interface HomeProps {
@@ -29,19 +29,19 @@ const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival, exclusiveV
         <Header />
         <HeroBanner heroBanner={heroBanner}/>
         {featuredMovie && (
-            <MovieList title="Featured Movie" data={featuredMovie} type="movie"/>
+            <Items title="Featured Movie" data={featuredMovie} type="movie"/>
         )}
 
         {newArrival && (
-            <MovieList title="New Arrival" data={newArrival} type="movie"/>
+            <Items title="New Arrival" data={newArrival} type="movie"/>
         )}
 
         {exclusiveVideos && (
-            <MovieList title="Exclusive Videos" data={exclusiveVideos} type="video"/>
+            <Items title="Exclusive Videos" data={exclusiveVideos} type="video"/>
         )}
 
         {featuredCasts && (
-            <MovieList title="Featured Casts" data={featuredCasts} type="cast"/>
+            <Items title="Featured Casts" data={featuredCasts} type="cast"/>
         )}
 
       <footer>
