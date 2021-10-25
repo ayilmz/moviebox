@@ -6,7 +6,7 @@ import { VideoType } from './Types';
 function VideoItem({data}:{data:VideoType[]}) {
     return (
         <ul className={styles.container}>
-            {data?.map((item:any, index:number) => (
+            {data?.map((item:VideoType, index:number) => (
                 <li className={styles.item} key={index}>
                     <i className={styles.play}/>
                     <a href={item.link} target="_blank">

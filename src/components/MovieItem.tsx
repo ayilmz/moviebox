@@ -6,7 +6,7 @@ import { MovieType } from './Types'
 function MovieItem({data}:{data:MovieType[]}) {
     return (
         <ul className={styles.container}>
-        {data?.map((item:any, index:number) => (
+        {data?.map((item:MovieType, index:number) => (
             <li className={styles.item} key={index}>
                 <div className={styles.favorite}>
                     <i/>

@@ -13,7 +13,9 @@ export type MovieType = {
     "image": string,
     "rating": number,
     "description": string,
-    "link": string
+    "link": string,
+    "releaseDate": string,
+    "kind": string[],
 }
 
 export type VideoType = {
