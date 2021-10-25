@@ -3,6 +3,7 @@ import MovieItem from "./MovieItem";
 import VideoItem from "./VideoItem";
 import CastItem from "./CastItem";
 import styles from "../styles/Items.module.css"
+import { WIDGET_TYPE } from '../enums'
 
 interface MovieListProps  {
     title: string;
@@ -17,15 +18,15 @@ const Items: FC<MovieListProps> = ({ title, type, data }) => {
                 <li>{title}</li>
                 <li>See more</li>
             </ul>
-            {type === "movie" && (
+            {type === WIDGET_TYPE.MOVIE && (
                 <MovieItem data={data} />
             )}
 
-            {type === "video" && (
+            {type === WIDGET_TYPE.VIDEO && (
                 <VideoItem data={data} />
             )}
 
-            {type === "cast" && (
+            {type === WIDGET_TYPE.CAST && (
                 <CastItem data={data} />
             )}
 

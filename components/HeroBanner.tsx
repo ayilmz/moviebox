@@ -17,7 +17,7 @@ function HeroBanner({heroBanner}:{heroBanner:HeroBannerType}) {
                 <ul>
                     <li>
                         <Image src='/IMDb.png' width={35} height={17} />
-                        <span>{heroBanner.imdb}/100</span>
+                        <span>{heroBanner.imdb}/10</span>
                     </li>
                     <li>
                         <Image src='/apple.png' width={16} height={17} />

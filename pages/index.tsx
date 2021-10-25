@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import HeroBanner from '../components/HeroBanner'
 import Items from '../components/Items'
 import React, { FC } from 'react';
+import { WIDGET_TYPE } from '../enums';
 
 interface HomeProps {
     "heroBanner": any;
@@ -27,21 +28,25 @@ const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival, exclusiveV
       </Head>
 
         <Header />
-        <HeroBanner heroBanner={heroBanner}/>
+
+        {heroBanner && (
+            <HeroBanner heroBanner={heroBanner}/>
+        )}
+
         {featuredMovie && (
-            <Items title="Featured Movie" data={featuredMovie} type="movie"/>
+            <Items title="Featured Movie" data={featuredMovie} type={WIDGET_TYPE.MOVIE}/>
         )}
 
         {newArrival && (
-            <Items title="New Arrival" data={newArrival} type="movie"/>
+            <Items title="New Arrival" data={newArrival} type={WIDGET_TYPE.MOVIE}/>
         )}
 
         {exclusiveVideos && (
-            <Items title="Exclusive Videos" data={exclusiveVideos} type="video"/>
+            <Items title="Exclusive Videos" data={exclusiveVideos} type={WIDGET_TYPE.VIDEO}/>
         )}
 
         {featuredCasts && (
-            <Items title="Featured Casts" data={featuredCasts} type="cast"/>
+            <Items title="Featured Casts" data={featuredCasts} type={WIDGET_TYPE.CAST}/>
         )}
 
       <footer>
