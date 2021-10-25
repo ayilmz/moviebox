@@ -6,16 +6,9 @@ import HeroBanner from '../src/components/HeroBanner'
 import Items from '../src/components/Items'
 import React, { FC } from 'react';
 import { WIDGET_TYPE } from '../enums';
+import { HomeTypes } from '../src/components/Types'
 
-interface HomeProps {
-    "heroBanner": any;
-    "featuredMovie": any;
-    "newArrival": any;
-    "exclusiveVideos": any;
-    "featuredCasts": any;
-}
-
-const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival, exclusiveVideos, featuredCasts }) => {
+const Home: FC<HomeTypes> = ({ heroBanner, featuredMovie, newArrival, exclusiveVideos, featuredCasts }) => {
   return (
     <div className={styles.container}>
       <Head>

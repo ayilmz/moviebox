@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from "../../styles/CastItem.module.css";
 import Image from "next/image";
+import {CastType} from './Types'
 
-function CastItem({data}:any) {
+function CastItem({data}:{data:CastType[]}) {
     return (
         <ul className={styles.container}>
             {data?.map((item:any, index:number) => (

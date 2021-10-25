@@ -7,7 +7,7 @@ import { WIDGET_TYPE } from '../../enums'
 
 interface MovieListProps  {
     title: string;
-    type: any;
+    type: string;
     data: any;
 }
 

@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from "../../styles/VideoItem.module.css";
 import Image from "next/image";
+import { VideoType } from './Types';
 
-function VideoItem({data}:any) {
+function VideoItem({data}:{data:VideoType[]}) {
     return (
         <ul className={styles.container}>
             {data?.map((item:any, index:number) => (

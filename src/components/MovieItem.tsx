@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from 'next/image'
 import styles from '../../styles/MovieItem.module.css';
+import { MovieType } from './Types'
 
-function MovieItem({data}:any) {
+function MovieItem({data}:{data:MovieType[]}) {
     return (
         <ul className={styles.container}>
         {data?.map((item:any, index:number) => (

@@ -1,15 +1,8 @@
 import React from 'react';
 import Image from 'next/image'
 import styles from '../../styles/Hero.module.css'
+import { HeroBannerType } from './Types'
 
-type HeroBannerType = {
-    "title": string,
-    "imdb": string,
-    "image": string,
-    "rating": number,
-    "description": string,
-    "link": string
-}
 function HeroBanner({heroBanner}:{heroBanner:HeroBannerType}) {
     return (
         <div className={styles.container}>
