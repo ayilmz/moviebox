@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import MovieItem from "./MovieItem";
 import VideoItem from "./VideoItem";
+import CastItem from "./CastItem";
 import styles from "../styles/MovieList.module.css"
 
 interface MovieListProps  {
@@ -23,6 +24,11 @@ const MovieList: FC<MovieListProps> = ({ title, type, data }) => {
             {type === "video" && (
                 <VideoItem data={data} />
             )}
+
+            {type === "cast" && (
+                <CastItem data={data} />
+            )}
+
         </div>
     );
 }

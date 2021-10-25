@@ -6,7 +6,7 @@ ul.container {
 }
 
 li.item {
-    width: 350px;
+    width: 250px;
     position: relative;
     list-style-type: none;
 }

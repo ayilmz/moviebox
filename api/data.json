@@ -98,5 +98,27 @@
       "title": "The Black Phone",
       "link": "https://www.imdb.com/title/tt7144666"
     }
+  ],
+  "featuredCasts": [
+    {
+      "image": "/movies/Keanu_Reeves.jpg",
+      "name": "Keanu Reeves",
+      "link": "https://www.imdb.com/name/nm0000206"
+    },
+    {
+      "image": "/movies/Ryan_Reynolds.jpg",
+      "name": "Ryan Reynolds",
+      "link": "https://www.imdb.com/name/nm0005351"
+    },
+    {
+      "image": "/movies/Timoth_Chalamet.jpg",
+      "name": "Timothée Chalamet",
+      "link": "https://www.imdb.com/name/nm3154303"
+    },
+    {
+      "image": "/movies/Chlo_Grace_Moretz.jpg",
+      "name": "Chloë Grace Moretz",
+      "link": "https://www.imdb.com/name/nm1631269"
+    }
   ]
 }

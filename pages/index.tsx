@@ -11,9 +11,10 @@ interface HomeProps {
     "featuredMovie": any;
     "newArrival": any;
     "exclusiveVideos": any;
+    "featuredCasts": any;
 }
 
-const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival, exclusiveVideos }) => {
+const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival, exclusiveVideos, featuredCasts }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -39,6 +40,10 @@ const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival, exclusiveV
             <MovieList title="Exclusive Videos" data={exclusiveVideos} type="video"/>
         )}
 
+        {featuredCasts && (
+            <MovieList title="Featured Casts" data={featuredCasts} type="cast"/>
+        )}
+
       <footer>
 
       </footer>
@@ -48,14 +53,15 @@ const Home: FC<HomeProps> = ({ heroBanner, featuredMovie, newArrival, exclusiveV
 
 export async function getServerSideProps(context:any) {
     const res = await fetch(`http://www.flashtr.com/moviebox/api/data.json`)
-    const { heroBanner, featuredMovie, newArrival, exclusiveVideos } = await res.json()
+    const { heroBanner, featuredMovie, newArrival, exclusiveVideos, featuredCasts } = await res.json()
 
     return {
         props: {
             heroBanner: heroBanner || null,
             featuredMovie: featuredMovie || null,
             newArrival: newArrival || null,
-            exclusiveVideos: exclusiveVideos || null
+            exclusiveVideos: exclusiveVideos || null,
+            featuredCasts: featuredCasts || null
         }
     }
 }
