@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../src/components/Header'
+import Footer from '../src/components/Footer'
 import HeroBanner from '../src/components/HeroBanner'
 import Items from '../src/components/Items'
 import React, { FC } from 'react';
@@ -42,9 +43,7 @@ const Home: FC<HomeTypes> = ({ heroBanner, featuredMovie, newArrival, exclusiveV
             <Items title="Featured Casts" data={featuredCasts} type={WIDGET_TYPE.CAST}/>
         )}
 
-      <footer>
-
-      </footer>
+      <Footer/>
     </div>
   )
 }

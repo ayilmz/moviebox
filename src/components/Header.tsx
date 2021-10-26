@@ -3,7 +3,7 @@ import styles from '../../styles/Header.module.css'
 const Header = () => (
         <div className={styles.container}>
             <div>
-                <Image   src="/movieBox.png" alt="MovieBox" width={186} height={50} />
+                <Image src="/movieBox.png" alt="MovieBox" width={186} height={50} />
             </div>
             <div className={styles.searchBar}>
                 <i className={styles.searchIcon}/>
