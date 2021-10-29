@@ -5,9 +5,9 @@ import { MovieType } from './Types'
 
 function MovieItem({data}:{data:MovieType[]}) {
     return (
-        <ul className={styles.container}>
+        <div className={styles.container}>
         {data?.map((item:MovieType, index:number) => (
-            <li className={styles.item} key={index}>
+            <div className={styles.item} key={index}>
                 <div className={styles.favorite}>
                     <i/>
                     <span/>
@@ -34,9 +34,9 @@ function MovieItem({data}:{data:MovieType[]}) {
                         {item.kind.join(", ")}
                     </p>
                 </a>
-            </li>
+            </div>
         ))}
-        </ul>
+        </div>
     )
 }
 
