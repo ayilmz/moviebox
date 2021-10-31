@@ -29,7 +29,7 @@ function HeroBanner({heroBanner}:{heroBanner:HeroBannerType}) {
             <Image
                 src={heroBanner.image}
                 alt={heroBanner.title}
-                width={1440}
+                width={1240}
                 height={600}
             />
         </div>

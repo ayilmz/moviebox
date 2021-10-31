@@ -43,6 +43,42 @@
       "kind": ["Crime","Drama"],
       "releaseDate": "October 16, 2018 (Spain)",
       "link": "https://www.imdb.com/title/tt13146488"
+    },
+    {
+      "image": "/movies/wheel-of-time.jpg",
+      "title": "Wheel of Time",
+      "imdb": "8.2",
+      "rating": 97,
+      "kind": ["Action","Drama","Mystery"],
+      "releaseDate": "October 21, 2021 (United States)",
+      "link": "https://www.imdb.com/title/tt7462410"
+    },
+    {
+      "image": "/movies/house-of-the-dragon.jpg",
+      "title": "House of the Dragon",
+      "imdb": "8.2",
+      "rating": 88,
+      "kind": ["Action","Drama","Mystery"],
+      "releaseDate": "October 21, 2021 (United States)",
+      "link": "https://www.imdb.com/title/tt11198330"
+    },
+    {
+      "image": "/movies/red-notice.jpg",
+      "title": "Red Notice",
+      "imdb": "8.2",
+      "rating": 99,
+      "kind": ["Action","Drama","Mystery"],
+      "releaseDate": "October 21, 2021 (United States)",
+      "link": "https://www.imdb.com/title/tt7991608"
+    },
+    {
+      "image": "/movies/venom.jpg",
+      "title": "Venom",
+      "imdb": "8.2",
+      "rating": 89,
+      "kind": ["Action","Drama","Mystery"],
+      "releaseDate": "October 21, 2021 (United States)",
+      "link": "https://www.imdb.com/title/tt7097896"
     }
   ],
   "newArrival": [

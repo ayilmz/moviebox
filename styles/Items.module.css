@@ -1,5 +1,5 @@
 .container {
-    width: 1247px;
+    width: 1320px;
 }
 
 
@@ -7,8 +7,9 @@ ul.titleAndLink{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 70px 0 44px 0;
+    margin: 70px auto 44px auto;
     padding: 0;
+    width: 1244px;
 }
 ul.titleAndLink li {
     list-style-type: none;
