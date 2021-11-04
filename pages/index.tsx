@@ -5,9 +5,11 @@ import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
 import HeroBanner from '../src/components/HeroBanner'
 import Items from '../src/components/Items'
+import FeaturedCasts from '../src/components/FeaturedCasts'
 import React, { FC } from 'react';
 import { WIDGET_TYPE } from '../enums';
 import { HomeTypes } from '../src/components/Types'
+import LazyLoad from 'react-lazyload';
 
 const Home: FC<HomeTypes> = ({ heroBanner, featuredMovie, newArrival, exclusiveVideos, featuredCasts }) => {
   return (
@@ -39,9 +41,11 @@ const Home: FC<HomeTypes> = ({ heroBanner, featuredMovie, newArrival, exclusiveV
             <Items title="Exclusive Videos" data={exclusiveVideos} type={WIDGET_TYPE.VIDEO}/>
         )}
 
-        {featuredCasts && (
-            <Items title="Featured Casts" data={featuredCasts} type={WIDGET_TYPE.CAST}/>
-        )}
+        <LazyLoad once>
+            <FeaturedCasts />
+        </LazyLoad>
+
+
 
       <Footer/>
     </div>
