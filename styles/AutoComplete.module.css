@@ -1,0 +1,25 @@
+.container {
+    position: absolute;
+    background: rgba(190, 18, 60, .6) ;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    z-index: -1;
+    margin-top: -2px;
+}
+.container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container li{
+    list-style-type: none;
+    padding: 10px 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.container li:last-child{
+    border-bottom: 0;
+}

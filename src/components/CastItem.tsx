@@ -4,9 +4,6 @@ import Image from "next/image";
 import { CastType } from './Types'
 
 function CastItem({data}:{data:CastType[]}) {
-
-    console.log(data)
-
     return (
         <ul className={styles.container}>
             {data?.map((item:CastType, index:number) => (
