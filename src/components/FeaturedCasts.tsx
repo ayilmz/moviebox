@@ -5,7 +5,7 @@ import {WIDGET_TYPE} from "../../enums";
 
 function FeaturedCasts() {
     const [data, setData] = useState(null);
-    const url = "https://www.flashtr.com/moviebox/api/featured-casts.json";
+    const url = "//www.flashtr.com/moviebox/api/featured-casts.json";
 
 
     useEffect(() => {
