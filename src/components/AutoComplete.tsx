@@ -1,13 +1,23 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import styles from '../../styles/AutoComplete.module.css'
+import axios from "axios";
+import { CastType } from "./Types"
 
 function AutoComplete() {
     const inputRef = useRef<HTMLInputElement>(null);
 
     const [visibleAutocomplete, setVisibleAutocomplete] = useState(false);
 
+    const [data, setData] = useState([]);
+    const url = "//www.flashtr.com/moviebox/api/featured-casts.json";
+
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.target.value.length > 0){
+            axios.get(url+"?key="+e.target.value)
+                .then(res => {
+                    setData( res.data.featuredCasts);
+                });
             setVisibleAutocomplete(true);
         }else{
             setVisibleAutocomplete(false);
@@ -24,8 +34,13 @@ function AutoComplete() {
             { visibleAutocomplete && (
                 <div className={styles.container}>
                     <ul>
-                        <li>The Batman</li>
-                        <li>Cowboy Bebop</li>
+                        {data?.map((item:CastType, index:number) => (
+                            <li>
+                                <a href={item.link} target="_blank">
+                                    {item.name}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 )
