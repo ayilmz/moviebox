@@ -9,7 +9,7 @@ function AutoComplete() {
     const [visibleAutocomplete, setVisibleAutocomplete] = useState(false);
 
     const [data, setData] = useState([]);
-    const url = "//www.flashtr.com/moviebox/api/featured-casts.json";
+    const url = "api/featured-casts.json";
 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
